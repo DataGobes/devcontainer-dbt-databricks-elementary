@@ -2,6 +2,7 @@ MXA_DI:
   outputs:
     dev:
       host: "{{ env_var('DATABRICKS_HOST_DBT') }}"
+      catalog: "dbt"
       http_path: "{{ env_var('DATABRICKS_ENDPOINT_DBT') }}"
       schema: "{{ env_var('DBT_USER_SCHEMA') }}"
       threads: 4

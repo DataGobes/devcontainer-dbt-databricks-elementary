@@ -65,12 +65,11 @@
     },
     
     // Add the IDs of extensions you want installed when the container is created.
-,
     "forwardPorts": [
         8080
     ],
     // install DBT dependencies after container is started && set git configs && set zsh environment variables to handle zscaler ca certificate for python
     "postCreateCommand": "dbt clean && dbt deps --project-dir . && echo 'export CERT_PATH=$(python -m certifi)' >> ~/.zshenv && echo 'export SSL_CERT_FILE=$CERT_PATH' >> ~/.zshenv && echo 'export REQUESTS_CA_BUNDLE=$CERT_PATH' >> ~/.zshenv",
     // configure git options to have it work from inside the git container (doesn't seem to work in postcreate)
-	"postStartCommand": "git config --global core.autocrlf true && git config --global --add safe.directory /workspaces/project_mxa && git config --global http.sslbackend openssl && git config --global credential.useHttpPath true"
+	"postStartCommand": "git config --global core.autocrlf true && git config --global --add safe.directory /workspaces/MXA_DI"
 }

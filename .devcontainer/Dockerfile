@@ -13,5 +13,6 @@ FROM mcr.microsoft.com/devcontainers/python:0-${VARIANT}
 #    && chown :pip-global ${PIP_TARGET} \
 #    && ( [ ! -f "/etc/profile.d/00-restore-env.sh" ] || sed -i -e "s/export PATH=/export PATH=\/usr\/local\/pip-global:/" /etc/profile.d/00-restore-env.sh )
 COPY ../requirements.txt requirements.txt
+RUN pip install -r requirements.txt
 ENV DBT_PROFILES_DIR=.
 ENV SHELL /usr/bin/zsh
