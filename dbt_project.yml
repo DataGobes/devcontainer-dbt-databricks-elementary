@@ -44,12 +44,6 @@ tests:
   +schema: dq
   +store_failures: true
 
-    
-
-on-run-end: 
-  - "{% if (flags.WHICH == 'run')
-       and (target.name == 'prod') %} {{ delta_tbl_ops(results) }} {% endif %}"
-
 vars:
   'dbt_date:time_zone': 'Europe/Amsterdam'
 
