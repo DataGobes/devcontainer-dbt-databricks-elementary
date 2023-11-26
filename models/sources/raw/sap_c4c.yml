@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: src_sap_c4c
-    schema: raw
-    tables:
-      - name: sap_c4c_lead_overview      
-      - name: sap_c4c_report_lead_funnel
