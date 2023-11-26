@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: src_amazon_vendor_central_catalog
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+    loaded_at_field: meta_insert_ts
+    schema: raw
+    tables:
+      - name: amazon_vendor_central_catalog
+        description: Raw table with amazon sp-api daily sales report in manufacturing view
+        
+  - name: src_amazon_asin_mapping
+    schema: raw
+    tables:
+      - name: amazon_miele_sku_asin_mapping
+        description: Table with reference mapping data from input csv files provided by VGs

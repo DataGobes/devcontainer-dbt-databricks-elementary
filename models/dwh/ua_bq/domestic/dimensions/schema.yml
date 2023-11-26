@@ -1,0 +1,49 @@
+version: 2
+
+models:
+  - name: dim_doms_device_ua_bq
+    columns:
+      - name: device_key
+        tests:
+          - unique
+  - name: dim_doms_event_ua_bq
+    columns:
+      - name: event_key
+        tests: 
+          - unique
+  - name: dim_doms_experiment_ua_bq
+    columns:
+      - name: experiment_key
+  - name: dim_doms_hit_ua_bq
+    columns:
+      - name: hit_key
+        tests:
+          - unique
+  - name: dim_doms_mapping_prod_ua_bq_miele_sku
+  - name: dim_doms_page_ua_bq
+    columns:
+      - name: page_key
+        tests:
+          - unique
+  - name: dim_doms_product_ua_bq
+    columns:
+      - name: product_ua_bq_key
+        tests: 
+          - unique
+  - name: dim_doms_session_ua_bq
+    columns:
+      - name: session_key
+        tests: 
+          - unique
+  - name: dim_doms_traffic_source_ua_bq
+    columns:
+      - name: traffic_source_key
+        tests: 
+          - unique
+  - name: dim_doms_adwords_clickinfo_ua_bq
+    description: "Dimension table for adwords clickinfo"
+    columns:
+      - name: click_info_key
+        tests: 
+          - unique
+          - not_null

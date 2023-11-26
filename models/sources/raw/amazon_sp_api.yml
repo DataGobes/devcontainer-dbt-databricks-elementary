@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: src_amazon_sp_api
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+    loaded_at_field: _meta_insert_ts
+    schema: raw
+    tables:
+      - name: amazon_sp_api_sales_report_manufacturing
+        description: Raw table with amazon sp-api daily sales report in manufacturing view
+      - name: amazon_sp_api_sales_report_sourcing
+        description: Raw table with amazon sp-api daily sales report in sourcing view
+      - name: amazon_sp_api_traffic_report
+        description: Raw table with amazon sp-api daily traffic report
+      - name: amazon_sp_api_inventory_report_sourcing
+        discription: Raw table with amazon sp-api inventory report in sourcing view
+      - name: amazon_sp_api_inventory_report_manufacturing
+        discription: Raw table with amazon sp-api inventory report in manufacturing view
+      - name: amazon_sp_api_net_pure_product_margin_report
+        discription: Raw table with amazon sp-api net pure product margin report

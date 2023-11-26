@@ -1,0 +1,14 @@
+version: 2
+
+seeds:
+  - name: country_codes
+    description: Table with ISO-3601 country codes and names in several languages
+  - name: vg_history_seed
+    description: This file consist of vg name and their corresponding view_id's with addition details 
+  - name: traffic_channel_priority_seed
+    description: This file consist of traffic channel and their priorites 
+  - name: Currencies_per_country_seed
+    description: This file consist of countries and their Currencies_per_country
+  - name: dim_country_seed
+    description: This file consist of countries and their country code in different format
+    

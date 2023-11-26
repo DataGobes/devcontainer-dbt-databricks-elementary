@@ -1,0 +1,90 @@
+﻿member_code,member_desc
+ZAG,Quotation
+ZAGK,Quotation KD
+ZAMB,Cash order from AMS
+ZAMD,Invoice printing AMS
+ZAML,KD delivery AMS
+ZAMR,Order invoice AMS
+ZANG,Quotation VG D VT
+ZB2C,Order B2C-Shop
+ZBV,Cash sale
+ZD0A,A-0 series KD-single
+ZD0B,B-0 series KD single
+ZD0G,Otherwise 0 series K
+ZEX,Standard Order
+ZFDG,Standard Order
+ZFKD,Standard Order
+ZFLE,VG commission Profes
+ZFRG,Returns.
+ZFST,Direct delivery to V
+ZFV1,VG order ZPL planned
+ZFV2,VG order VG planned
+ZG2,Credit. VT
+ZG2K,Credit Memo CS EX/VG
+ZG3,Credit VZ VT or no.
+ZGAL,Credit B2C Service
+ZGDI,Credit Memo Request
+ZGGD,GS Credit Ver. VGD
+ZGT1,WA sales special var
+ZIB2,Commissioning VT man
+ZIDV,Extranet misc order
+ZIG2,Credit  Extranet
+ZINT,ZTA via INT
+ZKA,Consignment Pick-up
+ZKAE,Quotation
+ZKB,Consignment Fill-up
+ZKCD,Standard Order
+ZKDV,Misc Sales KD
+ZKE,Consignment Issue
+ZKEX,Standard Order
+ZKG2,Credit KD
+ZKG3,Credit KD w/o deposi
+ZKKD,Standard Order
+ZKL2,Direct debit KD
+ZKL3,Direct debit KD w/o
+ZKR1,VGreturn new
+ZKR2,VGreturn exchange
+ZKR4,Techn.return new
+ZKR7,VGreturn outstanding
+ZKST,Standard Order
+ZKTD,Standard Order
+ZKVG,Standard Order
+ZKVM,Standard Order
+ZL2,Direct debit. VZ VT
+ZL2K,Direct debit KD EX /
+ZL3,Direct debit KD EX /
+ZLDI,Direct debit VG adj.
+ZLGD,LS Credit Ver. VGD
+ZPKZ,Proj. order (hedge)
+ZRBV,Cash return
+ZRE,Return to VZ warehou
+ZRE3,Return VZ-Lg VT o.A.
+ZRG2,Return ET in GT
+ZRG3,Return GT 01 o.A.
+ZRGG,Return GT Appl 01
+ZRV2,Return VT ZEL
+ZTA,Standard Order
+ZVA,Quotation
+ZVE1,Individual VGD
+ZVG,Manual VG Order
+ZVGD,VG Order Misc
+ZVGM,MMK/SOAF VG FW
+ZVGZ,Standard Order
+ZVM1,Standard Order
+ZVM2,Standard Order
+ZVR1,Returns.
+ZWA,Order WA.o. calculat
+ZWAB,Order WA Calc.
+ZWAP,Order WA price lists
+ZWAV,Standard Order
+ZWG2,GS advertising inlan
+ZWG3,GS advertising inlan
+ZWG5,GS EX / VG WEVS adve
+ZWL2,LS advertising inlan
+ZWL3,LS advertising inlan
+ZWL5,LS EX / VG WEVS adve
+ZZ0S,Standard Order
+ZZBL,Bonus direct debit E
+ZZBO,Credit Memo Request
+ZZG2,Credit Memo Request
+ZZL2,Direct debit EX / VG

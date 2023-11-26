@@ -1,0 +1,5 @@
+{
+    "dbt.queryLimit": 500,
+    "dotenv.enableAutocloaking": false,
+    "dbt.enableNewLineagePanel": true
+}

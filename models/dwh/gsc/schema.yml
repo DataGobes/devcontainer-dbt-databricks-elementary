@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: dwh_fct_google_search_console
+    description: "Dwh fact table with google search console data"

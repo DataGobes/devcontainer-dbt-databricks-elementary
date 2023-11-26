@@ -1,0 +1,101 @@
+version: 2
+
+models:
+  - name: pbi_dwh_dim_account_google_ads
+    description: "Google ads accounts dimension view for power bi report"
+    columns:
+      - name: account_key
+        description: "account_key"
+
+      - name: account_id
+        description: "account_id"
+       
+  - name: pbi_dwh_dim_adgroup_google_ads
+    description: "Google ads Adgroup dimension view for power bi report"
+    columns:
+      - name: adgroup_key
+        description: "adgroup_key"
+
+      - name: adgroup_id
+        description: "adgroup_id"
+      
+      - name: adgroup_type
+        description: "adgroup_type"
+
+      - name: adgroup_name
+        description: "adgroup_name"
+
+      - name: adgroup_labels
+        description: "adgroup_labels"
+
+      
+  - name: pbi_dwh_dim_campaign_google_ads
+    description: "Google Ads campaign dimension view for power bi report"
+    columns:
+      - name: campaign_key
+        description: "campaign_key"
+
+      - name: campaign_id
+        description: "campaign_id"
+
+      - name: campaign_name
+        description: "campaign_name"
+      
+      - name: campaign_group
+        description: "campaign_group"
+
+
+  - name: pbi_dwh_dim_device_google_ads
+    description: "Google ads device dimension view for power bi report"
+    columns:
+      - name: device_key
+        description: "device_key"
+
+      - name: device
+        description: "device"
+
+  - name: pbi_dwh_dim_keyword_google_ads
+    description: "Google ads keyword dimension view for power bi report" 
+    columns:
+      - name: keyword_key
+        description: "keyword_key"
+
+      - name: keyword_text
+        description: "keyword_info_text"
+
+  - name: pbi_dwh_dim_keyword_match_type_google_ads
+    description: "Google Ads keyword_match_type dimension view for power bi report " 
+    columns:
+      - name: keyword_matchtype_key
+        description: "keyword_matchtype_key"
+
+      - name: keyword_matchtype
+        description: "keyword_matchtype"
+
+  
+  - name: pbi_dwh_fct_keyword_google_ads
+    description: "Google ads keywords fact view for power bi report"
+    columns:
+      - name: date_key
+        description: "date_key"
+   
+      - name: account_key
+        description: "account_key"
+
+      - name: campaign_key
+        description: "campaign_key"
+
+      - name: adgroup_key
+        description: "adgroup_key"
+
+      - name: device_key
+        description: "device_key"
+
+      - name: keyword_key
+        description: "keyword_key"
+
+      - name: keyword_matchtype_key
+        description: "keywordmatch_type_key"
+
+
+      

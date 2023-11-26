@@ -1,0 +1,118 @@
+version: 2
+
+macros:
+  - name: convert_lc_to_eur
+    description: A macro to convert a column in local currency to euro. Outputs the original column postfixed with '_lc' and the converted column postfixed with '_eur'
+    arguments:
+      - name: lc_column
+        type: string
+        description: The name of the column in local currency you want to convert to euro
+      - name: fxrate_column
+        type: string
+        description: The name of the column with the fx rate to be used to convert the local currency to euro
+      - name: precision
+        type: integer
+        description: Number of decimal places. Defaults to 2.
+
+  - name: sort_language
+    description: Assigns a priority row number to language codes. Sorting is English, German and then in alpahabetical order
+    arguments:
+      - name: language
+        type: string
+        description: language code, ie. 'E','D'
+      - name: pk
+        type: list
+        description: list of primary key columns from the table
+  
+  - name: convert_date_to_key
+    description: Converts a column with date type to a key column that can be joined to dim_date
+    arguments:
+      - name: date_column
+        type: string
+        description: name of the column with type date to convert to a with type string 'YYYYMMDD'
+
+  - name: event_key
+    description: creates the event_key based on a fixed set of input fields that need to be present in the table that calls the macro.
+
+  - name: jsonstring_to_array
+    description: converts a json string to an array that can then be flattened in a further transformation
+    arguments: 
+      - name: column_name
+        type: string
+        description: column to transform, should contain a json string
+      - name: json_schema
+        type: string
+        description: schema of the json (json_to_schema()), not mandatory.
+
+  - name: unnest_json_string
+    description: unnest to the first hierarchy for a json string with multi-level hierarchy
+    arguments:
+      - name: column_name
+        type: string
+        description: column to transform, should contain a json string
+      - name: json_schema
+        type: string
+        description: schema of the json (json_to_schema()), not mandatory.
+
+  - name: nested_jsonstring_to_array
+    description: unnest the second level of a hierarchical json string to an array that can be flattened in a further transformation
+    arguments:
+      - name: column_name
+        type: string
+        description: column to transform, should contain a json string
+      - name: json_schema
+        type: string
+        description: schema of the json (json_to_schema()), not mandatory.
+  
+  - name: create_time_key
+    description: creates a timekey to connect with the table reference.dim_time
+    arguments:
+      - name: timestamp_column
+        type: timestamp
+       
+  - name: convert_to_eur
+    description: similar to convert_lc_to_eur, but without column renaming to allow for more flexibility
+    arguments:
+      - name: lc_column
+        type: string
+        description: The name of the column in local currency you want to convert to euro
+      - name: fxrate
+        type: string
+        description: The name of the column with the fx rate to be used to convert the local currency to euro
+      - name: precision
+        type: integer
+        description: Number of decimal places. Defaults to 2.
+
+
+  - name: delta_tbl_ops
+    description: This is parent macro to call the delta tabl operation it will call the child macro for every model involved in the current run  
+    arguments:
+      - name: results
+        type: Json artifact
+        description: The results variable contains a list of Result objects with one element per resource that executed in the dbt job. The Result object provides access within the Jinja on-run-end context to the information that will populate the run results JSON artifact.
+       
+  - name: is_delta_table
+    description: This macro checks the passed parameter is a delta table or not if it is delta table it will run delta table maintenance command ease it will exit 
+    arguments:
+      - name: table_name
+        type: string
+        description: name of the table which need maintenance
+
+  - name: base_url
+    description: strips the parameters from a web URL
+    arguments:
+      - name: column_name
+        type: string
+        description: The name of the column containing the original URL
+
+  - name: custom_channel_grouping
+    description: selects a channel grouping bucket based on the traffic source and medium
+    arguments:
+      - name: source
+        type: string
+        description: campaign source (utm_source) 
+      - name: medium
+        type: string
+        description: campaign medium (utm_source) 
+      
+      

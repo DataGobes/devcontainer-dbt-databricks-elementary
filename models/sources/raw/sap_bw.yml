@@ -1,0 +1,44 @@
+version: 2
+
+sources:
+  - name: src_sap_bw
+    loaded_at_field: meta_insert_ts
+    schema: raw
+    tables:
+      - name: sap_bw_master_billing_type_next
+      - name: sap_bw_master_buying_group
+      - name: sap_bw_master_campaign
+      - name: sap_bw_master_crm_transaction_type
+      - name: sap_bw_master_division_sales
+      - name: sap_bw_master_material
+      - name: sap_bw_master_material_div
+      - name: sap_bw_master_material_mkt_grp
+      - name: sap_bw_master_material_ph01
+      - name: sap_bw_master_material_ph02
+      - name: sap_bw_master_material_ph03
+      - name: sap_bw_master_material_ph04
+      - name: sap_bw_master_material_ph05
+      - name: sap_bw_master_material_prd_categ
+      - name: sap_bw_master_material_prd_hierarchy
+      - name: sap_bw_master_material_rep_grp1
+      - name: sap_bw_master_material_rep_grp2
+      - name: sap_bw_master_material_rep_grp3
+      - name: sap_bw_master_material_rep_grp4
+      - name: sap_bw_master_org_cons_class_chain
+      - name: sap_bw_master_org_distr_channel
+      - name: sap_bw_master_org_unit
+      - name: sap_bw_master_reporting_unit
+      - name: sap_bw_master_sales_org
+      - name: sap_bw_master_soldto_bp_type
+      - name: sap_bw_master_soldto_industry
+
+  - name: src_sap_bw_restricted
+    loaded_at_field: meta_insert_ts
+    schema: mxa_di_restricted_raw
+    tables:
+      - name: sap_bw_sales_order_details_vgd
+      - name: sap_bw_sales_order_details_next3
+      - name: sap_bw_sales_order_financials_next3
+        description: Raw table with sales transactions next3 data
+      - name: sap_bw_sales_order_financials_vgd
+        description: Raw table with sales transactions vgd data

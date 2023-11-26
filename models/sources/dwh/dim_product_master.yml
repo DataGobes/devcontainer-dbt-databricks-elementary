@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: src_dim_product_master
+    loaded_at_field: meta_insert_ts
+    schema: dwh
+    tables:
+      - name: dim_product_master_pim
+        description: N/A
+        

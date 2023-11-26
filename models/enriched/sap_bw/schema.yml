@@ -1,0 +1,166 @@
+version: 2
+
+models:
+  - name: enr_sapbw_sales_order_financials_next3
+    description: "Enriched table with Next3 sales transactions"
+    columns:
+
+      - name: date_posting_copa
+        description: "Calendar Date of the posting to COPA"
+
+      - name: uom
+        description: "Order Unit (6.06) - Order Intake"
+
+      - name: currency_code
+        description: "Currency Key Net Sales Inv. II Ext. Actual"
+
+      - name: reporting_unit_code
+        description: "Reporting Unit"
+
+      - name: crm_transaction_type_code
+        description: "CRM Transaction Type"
+
+      - name: distribution_channel_code
+        description: "Distribution Channel"
+
+      - name: material_code
+        description: "Material Code"
+
+      - name: material_prodh5
+        description: "Material: Product Hier L5 (8.05)"
+
+      - name: material_prodh3
+        description: "Material: Product Hier L3 (8.03)"
+
+      - name: material_prodh2
+        description: "Material: Product Hier L2 (8.02)"
+
+      - name: material_prodh1
+        description: "Material: Product Hier L1 (8.01)"
+
+      - name: material_division
+        description: "Material Division (8.10)d"
+
+      - name: material_mkt_grp
+        description: "Material: Marketing Group (8.09)"
+
+      - name: material_prodh4
+        description: "Material: Product Hier L4 (8.04)"
+
+      - name: material_repprdc
+        description: "Material: Rep Product Category (8.20)"
+
+      - name: material_repprdg1
+        description: "Material: Rep Product Group1 (8.21)"
+
+      - name: material_repprdg2
+        description: "Material: Rep Product Group2 (8.22)"
+          
+      - name: material_repprdg3
+        description: "Material: Rep Product Group3 (8.23)"
+
+      - name: material_repprdg4
+        description: "Material: Rep Product Group4 (8.24)"
+
+      - name: material_prodhier
+        description: "Material: Product Hierarchy (8.15)"
+
+      - name: org_unit
+        description: "Organization Unit"
+
+      - name: sales_org  
+        description: "Sales Organization"
+
+      - name: value_type_code
+        description: "Value Type for Reporting"
+
+      - name: billing_type_code
+        description: "Billing Type for Reporting"
+
+      - name: campaign_code
+        description: "Campaign Code"
+
+      - name: order_line_item
+        description: "Sales Document Item"
+
+      - name: buying_group
+        description: "Buying Group Code"
+
+      - name: division_sales_code
+        description: "Division Sales Code"
+
+      - name: customer_soldto_industry_nace_code
+        description: "SoldTo: Customer Industry Nace Code"
+
+      - name: customer_soldto_industry_miele_code
+        description: "SoldTo: Customer Industry Miele Code"
+
+      - name: soldto_business_partner_type_code
+        description: "SoldTo: Business Partner Type Code"
+
+      - name: version_code
+        description: "Version Code"
+
+      - name: order_number
+        description: "Order (document) Number Pseudonimized"
+
+      - name: customer_soldto_code
+        description: "SoldTo: Customer Pseudonimized"
+
+      - name: org_consumer_classification_chain_code
+        description: "Organization Customer Classification Chain Code"
+
+      - name: amt_net_sales_inv_II_ext_act
+        description: "Net Sales Inv. II Ext. Actual"
+
+      - name: amt_consumer_discount
+        description: "Quantity Inv. Prd Actual"
+
+      - name: quantity
+        description: "Order intake Quantity"
+
+      - name: quantity_inv_appl_div81
+        description: "Order intake Quantity Inventory"
+
+      - name: quantity_pl_actual_all
+        description: "Order intake Quantity Actual All"
+
+      - name: hash_pk
+        description: "Hash of all the primary keys" 
+        tests:
+          - unique
+
+      - name: source_id
+        description: "Source of the data"
+
+      - name: meta_src_folder
+        description: "Folder TS name in landing zone"
+        tests:
+          - not_null
+      
+      - name: meta_src_insert_ts
+        description: "Timestamp of the insertion by raw"
+        tests:
+          - not_null
+
+      - name: is_ecomm
+        description: indicator showing 'Y' if this is a ECOMM order, else 'N'
+        tests:
+          - accepted_values:
+              values: ['Y','N']
+
+      - name: is_bu_professional
+        description: indicator showing 'Y' if this record is about BU Professional
+        tests:
+          - accepted_values:
+              values: ['Y','N']
+
+      - name: is_amazon
+        description: indicator showing 'Y' if this record is from Amazon
+        tests:
+          - accepted_values:
+              values: ['Y','N']
+
+      - name: meta_insert_ts
+        description: "Timestamp of the insertion in enriched"
+

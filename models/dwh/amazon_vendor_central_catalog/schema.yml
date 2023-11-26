@@ -1,0 +1,103 @@
+version: 2
+
+models:
+  - name: dwh_dim_amazon_asin_master
+    description: ""
+    columns:
+      - name: amazon_product_key
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+      - name: asin_code
+        description: ""
+        tests:
+          - not_null
+
+      - name: amazon_country
+        description: ""
+        tests:
+          - not_null
+
+      - name: product_title
+        description: ""
+        tests:
+          - not_null:
+              config:
+                severity: error
+                error_if: ">1000"
+                warn_if: ">10"
+
+      - name: manufacturer_code
+        description: ""
+
+      - name: parent_asin
+        description: ""
+
+      - name: upc
+        description: ""
+
+      - name: ean
+        description: ""
+
+      - name: isbn_13
+        description: ""
+
+      - name: model_number
+        description: ""
+
+      - name: brand
+        description: ""
+
+      - name: brand_code
+        description: ""
+
+      - name: product_group
+        description: ""
+
+      - name: release_date
+        description: ""
+
+      - name: replenishment_category
+        description: ""
+
+      - name: prep_instructions_required
+        description: ""
+
+      - name: prep_instructions_vendor_state
+        description: ""
+
+      - name: meta_insert_ts
+        description: ""
+
+      - name: meta_src_table
+        description: ""
+
+  - name: dwh_dim_amazon_mapping_asin_miele_sku
+    description: ""
+    tests:
+      - unique:
+          column_name: "(amazon_product_key || '-' || miele_product_master_key)"
+    columns:
+      - name: amazon_product_key
+        description: ""
+        tests:
+          - unique
+          - not_null
+      - name: amz_country
+        description: ""
+      - name: amz_asin_code
+        description: ""          
+      - name: amz_ean_code
+        description: ""          
+      - name: amz_upc_code
+        description: ""    
+      - name: miele_ean_code
+        description: "" 
+      - name: miele_product_master_key
+        description: "" 
+      - name: source_flag
+        description: ""
+      - name: meta_insert_ts
+        description: ""

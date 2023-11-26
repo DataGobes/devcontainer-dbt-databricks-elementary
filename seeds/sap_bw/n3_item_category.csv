@@ -1,0 +1,47 @@
+﻿member_code,member_desc
+6600/ZA01,Standard
+6600/ZA02,Service
+6600/ZA03,Free o.charge
+6600/ZA04,Cross Docking from GT
+6600/ZA05,Direct Delivery from GT
+6600/ZA06,Service fr.o.charge
+6600/ZA08,Goodwill
+6600/ZA09,Warranty
+6600/ZA11,MMK with Purchase Requisition
+6600/ZA18,Service no delivery
+6600/ZA25,Miele Service Certificate
+6600/ZA26,Miele Service Certificate Free-of-charge
+6600/ZA31,Consignment Issue
+6600/ZA33,Cons.Iss.free o.char
+6600/ZA34,Direct Delivery from GT (Free of Charge)
+6600/ZA35,Direct Delivery Appliances from GT (FOC)
+6600/ZA70,Counter standard
+6600/ZA71,Counter standard
+6600/ZA72,Counter order-related billing
+6600/ZA73,Counter Order Related Billing
+6600/ZB01,Set header material
+6600/ZB02,Set item material
+6600/ZQ01,Rule-Based ATP Standard
+6600/ZQ03,Rule-Based ATP Standard (Free of Charge)
+6600/ZQ05,Rule-Based ATP Direct Delivery from GT
+6600/ZQ09,Rule-Based ATP Standard (Warranty FoC)
+7200/ZA01,Standard
+7200/ZA02,Service
+7200/ZA03,Free o.charge
+7200/ZA05,Direct Delivery from GT
+7200/ZA08,Goodwill
+7200/ZA09,Warranty
+7200/ZA11,MMK with Purchase Requisition
+7200/ZA18,Service no delivery
+7200/ZA31,Consignment Issue
+7200/ZA34,Direct Delivery from GT (Free of Charge)
+7200/ZA35,Direct Delivery Appliances from GT (FOC)
+7200/ZA70,Counter standard
+7200/ZA71,Counter standard
+7200/ZA72,Counter order-related billing
+7200/ZA73,Counter Order Related Billing
+7200/ZB01,Set header material
+7200/ZQ01,Rule-Based ATP Standard
+7200/ZQ03,Rule-Based ATP Standard (Free of Charge)
+7200/ZQ05,Rule-Based ATP Direct Delivery from GT
+7200/ZQ15,Rule-Based ATP Direct Del. from GT (FOC)

@@ -1,0 +1,39 @@
+Property_ID,VG,Property_Name,Timezone,Country_Name,Region,Cluster,Top_6,Large_or_Small,Global_Focus_Markets,Platform,VG_GA_Name,Homepage_URL,From_DT,To_DT,is_active
+337404022,AE,DOM GA4 AE,Asia/Dubai,United Arab Emirates,APAC,UAE+,No,L,Yes,intershop,UAE,https://www.miele.ae,2023-06-20,2050-12-31,Y
+334315692,AT,DOM GA4 AT,Europe/Vienna,Austria,DACH,Austria+,No,L,Yes,hybris,AT,https://www.miele.at,2023-06-20,2050-12-31,Y
+337382189,AU,DOM GA4 AU,Australia/Perth,Australia,APAC,Australia+,Yes,L,Yes,intershop,AUS,https://www.miele.com.au,2023-06-20,2050-12-31,Y
+334639010,BE,DOM GA4 BE,Europe/Brussels,Belgium,NWE,BeLux,No,L,Yes,hybris,BE,https://www.miele.be,2023-06-20,2050-12-31,Y
+413031195,BG,DOM GA4 BG,Europe/Sofia,Bulgaria,SEE,EEC,No,S,No,local,BG,https://www.miele.bg,,2050-12-31,N
+334641799,CH,DOM GA4 CH,Europe/Zurich,Switzerland,DACH,,Yes,L,Yes,hybris,CH,https://www.miele.ch,2023-06-20,2050-12-31,Y
+337400897,CN,DOM GA4 CN,Asia/Shanghai,China,APAC,,No,L,Yes,intershop,CN,https://www.miele.cn,,2050-12-31,N
+337422737,CZ,DOM GA4 CZ,Europe/Prague,Czech Republic,SEE,EEC,No,S,No,hybris,CZ,https://www.miele.cz,2023-06-20,2050-12-31,Y
+333653103,DE,DOM GA4 DE,Europe/Berlin,Germany,DACH,,Yes,L,Yes,hybris,D,https://www.miele.de,2023-06-20,2050-12-31,Y
+334590223,DK,DOM GA4 DK,Europe/Copenhagen,Denmark,NWE,Nordics,No,S,No,hybris,DK,https://www.miele.dk,2023-06-20,2050-12-31,Y
+337390576,EE,DOM GA4 EE,Europe/Tallinn,Estonia,NWE,Baltics,No,S,No,intershop,EE,https://www.miele.ee,2023-06-20,2050-12-31,Y
+336642960,ES,DOM GA4 ES,Europe/Madrid,Spain,SEE,Iberia,No,L,Yes,hybris,ES,https://www.miele.es,2023-06-20,2050-12-31,Y
+334635595,FI,DOM GA4 FI,Europe/Helsinki,Finland,NWE,Nordics,No,S,No,hybris,FIN,https://www.miele.fi,2023-06-20,2050-12-31,Y
+334621683,FR,DOM GA4 FR,Europe/Paris,France,NWE,,No,L,Yes,hybris,FR,https://www.miele.fr,2023-06-20,2050-12-31,Y
+334633965,GB,DOM GA4 GB,Europe/London,United Kingdom,NWE,United Kingdom+,Yes,L,Yes,hybris,GB,https://www.miele.co.uk,2023-06-20,2050-12-31,Y
+353729085,GR,DOM GA4 GR,Europe/Athens,Greece,SEE,Greece+,No,L,Yes,hybris,GR,https://www.miele.gr,2023-06-20,2050-12-31,Y
+337392718,HK,DOM GA4 HK,Asia/Hong_Kong,Hong Kong,APAC,,No,L,Yes,intershop,HK,https://www.miele.hk,2023-06-20,2050-12-31,Y
+337426966,HR,DOM GA4 HR,Europe/Zagreb,Croatia,DACH,Austria+,No,S,No,intershop,HR,https://www.miele.hr,2023-06-20,2050-12-31,Y
+353747187,HU,DOM GA4 HU,Europe/Budapest,Hungary,SEE,EEC,No,S,No,hybris,HU,https://www.miele.hu,2023-06-20,2050-12-31,Y
+343551268,IE,DOM GA4 IE,Europe/Dublin,Ireland,NWE,United Kingdom+,No,S,No,hybris,IRL,https://www.miele.ie,2023-06-20,2050-12-31,Y
+334627787,IT,DOM GA4 IT,Europe/Rome,Italy,SEE,,Yes,L,Yes,hybris,IT,https://www.miele.it,2023-06-20,2050-12-31,Y
+350538165,JP,DOM GA4 JP,Asia/Tokyo,Japan,APAC,,No,L,Yes,intershop,JP,https://www.miele.co.jp,2023-06-20,2050-12-31,Y
+337401199,KR,DOM GA4 KR,Asia/Seoul,South Korea,APAC,,No,L,Yes,intershop,ROK,https://www.miele.co.kr,2023-06-20,2050-12-31,Y
+337389180,LT,DOM GA4 LT,Europe/Vilnius,Lithuania,NWE,Baltics,No,S,No,intershop,LT,https://www.miele.lt,2023-06-20,2050-12-31,Y
+334642800,LU,DOM GA4 LU,Europe/Luxembourg,Luxembourg,NWE,BeLux,No,S,No,hybris,LUX,https://www.miele.lu,2023-06-20,2050-12-31,Y
+337371706,LV,DOM GA4 LV,Europe/Riga,Latvia,NWE,Baltics,No,S,No,intershop,LV,https://www.miele.lv,2023-06-20,2050-12-31,Y
+337409564,MY,DOM GA4 MY,Asia/Kuching,Malaysia,APAC,Singapore+,No,S,No,intershop,MY,https://www.miele.my,2023-06-20,2050-12-31,Y
+334636709,NL,DOM GA4 NL,Europe/Amsterdam,Netherlands,NWE,,Yes,L,Yes,hybris,NL,https://www.miele.nl,2023-06-20,2050-12-31,Y
+334644697,NO,DOM GA4 NO,Europe/Oslo,Norway,NWE,Nordics,No,S,No,hybris,NO,https://www.miele.no,2023-06-20,2050-12-31,Y
+337416657,NZ,DOM GA4 NZ,Pacific/Auckland,New Zealand,APAC,Australia+,No,S,No,intershop,NZ,https://www.miele.co.nz,2023-06-20,2050-12-31,Y
+353730371,PL,DOM GA4 PL,Europe/Warsaw,Poland,SEE,EEC,No,S,No,hybris,PL,https://www.miele.pl,2023-06-20,2050-12-31,Y
+336669907,PT,DOM GA4 PT,Europe/Lisbon,Portugal,SEE,Iberia,No,L,Yes,hybris,PT,https://www.miele.pt,2023-06-20,2050-12-31,Y
+334641895,SE,DOM GA4 SE,Europe/Stockholm,Sweden,NWE,Nordics,No,S,No,hybris,SE,https://www.miele.se,2023-06-20,2050-12-31,Y
+337382589,SG,DOM GA4 SG,Asia/Singapore,Singapore,APAC,Singapore+,No,L,Yes,intershop,SGP,https://www.miele.sg,2023-06-20,2050-12-31,Y
+337369280,SI,DOM GA4 SI,Europe/Ljubljana,Slovenia,DACH,Austria+,No,S,No,local,SI,https://www.miele.si,2023-06-20,2050-12-31,Y
+337419480,SK,DOM GA4 SK,Europe/Bratislava,Slovakia,SEE,EEC,No,S,No,hybris,SK,https://www.miele.sk,2023-06-20,2050-12-31,Y
+334586179,US,DOM GA4 US,America/Los_Angeles,United States of America,NAR,,No,L,Yes,hybris,USA,https://www.mieleusa.com,2023-06-20,2050-12-31,Y
+353760387,ZA,DOM GA4 ZA,Africa/Johannesburg,South Africa,NWE,United Kingdom+,No,S,No,legacy,ZA,https://www.miele.co.za,,2050-12-31,N

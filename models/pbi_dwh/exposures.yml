@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  
+  - name: Amazon_Dashboard
+    type: dashboard
+    maturity: high
+    url: https://thisisjustanurl.com
+    description: Did someone say "exponential growth"?
+
+    depends_on:
+      - ref('pbi_dwh_amazon_sales_report')
+      - ref('pbi_dwh_amazon_traffic_report')
+      - ref('pbi_dwh_amazon_net_pure_product_margin_report')
+
+    owner:
+      name: Umut from Dataviz
+      email: umut.ozbay@miele.com

@@ -1,0 +1,17 @@
+﻿member_code,member_desc
+#,Not assigned
+01001,Household
+01001001,Elec. Goods chains
+01001002,Elec. Goods buy. groups
+01001003,Elec. Goods independent
+01001004,Kitchen specialist
+01001006,Mail orders/e-commerce
+01001007,Department stores
+01001008,Mass merchandisers
+01001999,Others
+01002,Professional Retail
+01002001,Laundry Retailer
+01002003,Dental Depot
+01002004,Medical Equipment Retailer
+01002005,Laboratory Retailer
+01002009,Other Retailer

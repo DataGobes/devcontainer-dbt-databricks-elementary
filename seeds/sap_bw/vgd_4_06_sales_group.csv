@@ -1,0 +1,107 @@
+﻿member_code,member_desc
+010,VTK Westerwalbesloh
+011,Zentrale VTE
+014,Zentrale VTK
+021,Key Account VTE
+022,Key Account VTK
+031,VTE Zenz
+032,VTE Kittel
+034,VTK Dr. Lan      ALT
+037,Projektgeschäft
+041,E-Commerce B2B
+111,VTE Warttmann
+114,VTK Nottrodt
+119,VTK Mitte/Nord o.Zuo
+121,VTE Bereiter
+122,VTE Köder
+124,VTK Muth
+129,VTE Mitte/Nord o.Zuo
+201,Direktgeschäft B2C
+202,Mitarbeiterverkauf
+241,SDA Hirsch
+242,VTE Niecknig
+243,VTK Scharnke
+244,VTK Baumer
+249,Süd/Ost ohne Zuordnu
+252,VTE Bitter
+254,VTK Mundhenke    ALT
+312,VTE Hof
+314,VTK Gabele
+319,Süd/West ohne Zuordn
+331,HCS North
+332,HCS South
+335,LMD
+339,Prof.  ohne Zuordnun
+520,KDM Nord/Ost
+521,KDM Albrechtsen
+522,KDM Nitzsche
+524,KDM Bethge
+525,KDM Esser
+528,KDM Dahm
+529,KDM Pilop
+530,KDM Ladendorf
+540,KDM Mitte
+542,KDM Schimpf
+543,KDM Weise
+547,KDM Fechter
+548,KDM Kroth
+560,KDM Seipold
+562,KDM Müller
+563,KDM Nothaft
+566,KDM Middendorf
+568,KDM Berchtenbreiter
+581,KDM Nitschke
+582,KDM Stein
+584,KDM Jodat
+586,KDM Schmitz
+588,KDM Müchler
+589,KDM Hörmann
+600,KDM Süd
+601,KDM Wölfle
+602,KDM Stichnoth
+603,KDM Hoffmann
+605,KDM Neue
+606,KDM Wollensak
+608,KDM Andrasy
+621,KDM Stuppe
+622,KDM Wörmann
+700,KDM Pro G/GG
+701,KDM Gottheil
+702,KDM Thomé
+704,KDM Prior
+705,KDM Lange
+707,KDM Neumann
+709,KDM Behme
+710,KDM Hansen
+712,KDM Kaminsky
+713,KDM Falkenthal
+714,KDM Mülhöfer
+715,KDM Gröbel
+716,KDM Ege
+717,KDM Nähr
+720,KDM Höhne
+721,KDM Neubauer
+722,KDM Nietsch
+723,KDM Auras
+725,KDM Niklas
+726,KDM Hettich
+727,KDM Simmen
+728,KDM Volk
+729,KDM Pietz
+730,KDM Schmid
+731,KDM Dogan
+732,KDM Schräder
+750,KDM Pro K/KE
+993,KDT PROF NA
+994,KDT BL NA
+995,KDT Nord/Ost NA
+996,KDT Mitte NA
+997,gelöscht
+998,gelöscht
+999,KDT Süd NA
+B2C,B2C aus Shop
+GBL,MEC Berlin
+MDU,MEC Düsseldorf
+MGT,MEC Gütersloh
+STV,Staubsauger-Shop GT
+#,Not assigned

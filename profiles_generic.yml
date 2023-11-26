@@ -1,0 +1,17 @@
+MXA_DI:
+  outputs:
+    dev:
+      host: "{{ env_var('DATABRICKS_HOST_DBT') }}"
+      http_path: "{{ env_var('DATABRICKS_ENDPOINT_DBT') }}"
+      schema: "{{ env_var('DBT_USER_SCHEMA') }}"
+      threads: 4
+      token: "{{ env_var('DATABRICKS_TOKEN_DBT') }}"
+      type: databricks
+    prod:
+      host: "{{ env_var('DATABRICKS_HOST_DBT') }}"
+      http_path: "{{ env_var('DATABRICKS_ENDPOINT_DBT') }}"
+      schema: mxa_di
+      threads: 4
+      token: "{{ env_var('DATABRICKS_TOKEN_DBT') }}"
+      type: databricks
+  target: dev

@@ -1,0 +1,98 @@
+with source as (
+
+    select *
+    from
+        {{ source('src_sap_c4c', 'sap_c4c_lead_overview') }}
+),
+
+date_trim as (
+
+    select *,
+        replace(replace(CDOC_CHANGED_DT, '/Date(', ''), ')/', '') / 1000    as changed_dt_epoch,
+        replace(replace(CDOC_CREATED_DT, '/Date(', ''), ')/', '') / 1000    as created_dt_epoch,
+        replace(replace(CDOC_PROCSTART_DT, '/Date(', ''), ')/', '') / 1000  as start_date_epoch,
+        replace(replace(CDOC_PRDEND_DT, '/Date(', ''), ')/', '') / 1000     as end_date_epoch,
+        replace(replace(CDOC_PRDSTRT_DT, '/Date(', ''), ')/', '') / 1000    as calender_day_epoch   
+    from source
+),
+
+renamed as (
+    select 
+        CDOC_UUID                   as lead_uid,
+        TDOC_UUID                   as lead_uid_text,
+        CDOC_ID                     as lead_id,
+        TDOC_ID                     as lead,
+        CLEAD_NAME                  as lead_description,
+        CCAMPAIGN_ID                as campaign_id,
+        TCAMPAIGN_ID                as campaign,
+        CCAMPAIGN_UUID              as campaign_uid,
+        TCAMPAIGN_UUID              as campaign_uid_text,
+        CDBA_DISTRCHN               as distribution_channel_id,
+        TDBA_DISTRCHN               as distribution_channel,
+        CDBA_DIVISION               as division_id,
+        TDBA_DIVISION               as division,
+        CDBA_SALESORG               as sales_organization,
+        TDBA_SALESORG               as sales_organization_text,
+        CDBA_SALESORG_ID            as sales_organization_id,
+        TDBA_SALESORG_ID            as sales_organization_id_text,
+        {{ dbt_date.from_unixtimestamp("changed_dt_epoch") }} as changed_dt,
+        {{ dbt_date.from_unixtimestamp("created_dt_epoch") }} as created_dt,
+        CDOC_CREATIONBY             as creation_by_id,
+        TDOC_CREATIONBY             as creation_by,
+        CDOC_GROUP                  as category_id,
+        TDOC_GROUP                  as category,
+        CDOC_ORIGINTYPE             as source_id,
+        TDOC_ORIGINTYPE             as source,
+        {{ dbt_date.from_unixtimestamp("start_date_epoch") }} as start_date,        
+        {{ dbt_date.from_unixtimestamp("end_date_epoch") }} as end_date,          
+        CDOC_PRIORITY               as priority_id,
+        TDOC_PRIORITY               as priority,
+        {{ dbt_date.from_unixtimestamp("calender_day_epoch") }} as calender_day,
+        CDOC_PROST_YR               as calender_year,
+        CDOC_PROST_YR_M             as calender_month_year,
+        CDOC_PROST_YR_Q             as calender_quarter_year,
+        CDOC_PROST_YR_W             as calender_week_year,
+        CDOC_QUALIFNLEVEL           as qualification_id,
+        TDOC_QUALIFNLEVEL           as qualification,
+        CDOC_S_APPROVAL             as approval_status_id,
+        TDOC_S_APPROVAL             as approval_status,
+        CDOC_S_LIFECYCLE            as lifecycle_status_id,
+        TDOC_S_LIFECYCLE            as lifecycle_status,
+        CDOC_S_QUALIFN              as qualification_status_id,
+        TDOC_S_QUALIFN              as qualification_status,
+        CDPC_MAINCONTPTY            as main_contact_id,
+        TDPC_MAINCONTPTY            as main_contact,
+        CDPY_PROSPECTPTY            as account_id,
+        TDPY_PROSPECTPTY            as account,
+        CDPY_PRSPY_IND              as industry_id,
+        TDPY_PRSPY_IND              as industry,
+        CDPY_PRSPY_INDSYS           as industry_system_id,
+        TDPY_PRSPY_INDSYS           as industry_system,
+        CML_SCORE                   as score,
+        CSALES_TERRITORY_ID         as territory_id,
+        TSALES_TERRITORY_ID         as territory,
+        CUSER_STATUS_CODE           as lead_status_id,
+        TUSER_STATUS_CODE           as lead_status,
+        KCLEAD_QUALIFICATION_RATE   as lead_qualification_rate, 
+        FCLEAD_QUALIFICATION_RATE   as lead_qualification_rate_formatted,
+        UCLEAD_QUALIFICATION_RATE   as lead_qualification_rate_unit,
+        RCLEAD_QUALIFICATION_RATE   as lead_qualification_rate_currency,
+        KCNO_OF_LEADS               as number_of_leads,
+        FCNO_OF_LEADS               as number_of_leads_formatted,            
+        KCNO_OF_COLD_LEADS          as cold,    
+        FCNO_OF_COLD_LEADS          as cold_formatted,
+        KCNO_OF_WARM_LEADS          as warm,
+        FCNO_OF_WARM_LEADS          as warm_formatted,
+        KCNO_OF_HOT_LEADS           as hot,
+        FCNO_OF_HOT_LEADS           as hot_formatted,
+        KCZF8B4765AECBF251A63E1D3   as light_leads,
+        FCZF8B4765AECBF251A63E1D3   as light_leads_formatted,    
+        RCZF8B4765AECBF251A63E1D3   as light_leads_currency,
+        UCZF8B4765AECBF251A63E1D3   as light_leads_unit,
+        KCZ253036B21CA89379E60E45   as heavy_leads,
+        FCZ253036B21CA89379E60E45   as heavy_leads_formatted,
+        current_timestamp()         as meta_insert_ts  
+    from date_trim
+)
+
+select * from renamed

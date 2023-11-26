@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: src_google_search_console
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+    loaded_at_field: meta_insert_ts
+    schema: raw
+    tables:
+      - name: google_search_console
+        description: Raw table with google search console data on page level
+      - name: google_search_console_by_query
+        description: Raw table with google search console data on query level
+      - name: google_search_console_by_property
+        description: Raw table with google search console data on property level

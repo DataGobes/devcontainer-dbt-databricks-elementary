@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: src_reference
+    loaded_at_field: meta_insert_ts
+    schema: reference
+    tables:
+      - name: dim_vg
+        description: Reference dim table with vg and homepage url data
+      - name: dim_fx_rate
+        description: Reference dim table with fx rates
+      - name: dim_global_config
+        description: Reference global configuration table
+      - name: dim_time
+        description: Reference global time table
+      - name: dim_date
+        description: Reference global time table
+
+        
+      

@@ -1,0 +1,132 @@
+version: 2
+
+models:
+  - name: dim_account_google_ads
+    description: "Google ads accounts dimension table"
+    columns:
+      - name: account_key
+        description: "account_key"
+        tests:
+          - unique
+          - not_null
+
+      - name: account_id
+        description: "account_id"
+       
+  - name: dim_adgroup_google_ads
+    description: "Google ads Adgroup dimension tale"
+    columns:
+      - name: adgroup_key
+        description: "adgroup_key"
+        tests:
+          - unique
+          - not_null
+
+      - name: adgroup_id
+        description: "adgroup_id"
+      
+      - name: adgroup_type
+        description: "adgroup_type"
+
+      - name: adgroup_name
+        description: "adgroup_name"
+
+      - name: adgroup_labels
+        description: "adgroup_labels"
+
+      
+  - name: dim_campaign_google_ads
+    description: "Google Ads campaign dimension table"
+    columns:
+      - name: campaign_key
+        description: "campaign_key"
+        tests:
+          - unique
+          - not_null
+
+      - name: campaign_id
+        description: "campaign_id"
+
+      - name: campaign_name
+        description: "campaign_name"
+      
+      - name: campaign_group
+        description: "campaign_group"
+
+
+  - name: dim_device_google_ads
+    description: "Google ads device dimension table"
+    columns:
+      - name: device_key
+        description: "device_key"
+        tests:
+        - unique
+        - not_null
+
+      - name: device
+        description: "device"
+
+  - name: dim_keyword_google_ads
+    description: "Google ads dimension table for keyword" 
+    columns:
+      - name: keyword_key
+        description: "keyword_key"
+        tests:
+        - unique
+        - not_null
+
+      - name: keyword_text
+        description: "keyword_info_text"
+
+  - name: dim_keyword_match_type_google_ads
+    description: "Google Ads dimension table for keyword match type" 
+    columns:
+      - name: keyword_matchtype_key
+        description: "keyword_matchtype_key"
+        tests:
+        - unique
+        - not_null
+
+      - name: keyword_matchtype
+        description: "keyword_matchtype"
+
+  
+  - name: fct_keyword_google_ads
+    description: "Google ads fact table for keywords"
+    columns:
+      - name: date_key
+        description: "date_key"
+        tests:
+        - not_null
+   
+      - name: account_key
+        description: "account_key"
+        tests:
+        - not_null
+
+      - name: campaign_key
+        description: "campaign_key"
+        tests:
+        - not_null
+
+      - name: adgroup_key
+        description: "adgroup_key"
+        tests:
+        - not_null
+
+      - name: device_key
+        description: "device_key"
+        tests:
+        - not_null
+
+      - name: keyword_key
+        description: "keyword_key"
+        tests:
+        - not_null
+
+      - name: keyword_matchtype_key
+        description: "keywordmatch_type_key"
+        tests:
+        - not_null
+
+      

@@ -1,0 +1,162 @@
+﻿member_code,member_desc
+102,Damaged in transit
+103,Quantity discrepancy
+A10,Order-related individual authorization
+AUV,Remuneration for expenses (VT)
+BEN,Energy saving for bigs (PROF)
+BES,Damage discount
+BHP,BlueHorizon Professiona
+BLK,Charge Customer Service (KD)
+BLV,Direct Debit Sales (VT/EX/VG)
+BO,Bonus (VT/KD)
+BVH,Charge Sales (VT)
+CAB,Cashback PROF
+CAS,PRO Cashback PG 816x
+DIE,Service (KD)
+DIF,Difference
+EIL,Urgent Order Lehrte
+ENT,Compensation (VT B2C)
+ERS,Sparepart delivery (VT/KD B2C)
+EXG,Credit note export
+FB1,Freight/port debit (VT/VG)
+FFW,Incorrectly Invoiced (EX/VG)
+FRV,Freight remuneration (VT/KD/VG)
+GAL,Credit note general
+GE,Fee reimbursement (KD)
+GLP,Warranty delivery Professional
+GUT,Voucher (VT B2C)
+GVL,GVL Plus
+GVW,ONLY credit memo procedure VG D Value de
+GWF,Warranty
+GZG,Campaign: Money Back Guarantee (VT)
+HCS,System Bonus PROF
+HOC,Flood relief
+HPT,HPT
+IBN,Service for commissioning (VT)
+IFA,IFA Berlin
+INS,Maintenance (KD)
+IVZ,IVZ
+KAB,Customer group accounting (VA)
+KAS,Campaing: Octoplus 10 kg
+KKS,No sales set
+KME,Küchenmeile
+KOJ,Kojenzuschuß (VT)
+KOV,Subsidy according to agreement
+KU,Goodwill without VAT (KD)
+KU1,Goodwill - Rep. Uneconomical
+KU2,Goodwill - multiple repairs
+KU3,Goodwill - technical solution
+KU4,Goodwill - spare part
+KU5,Goodwill - customer request
+KU6,Goodwill - new defective
+KUM,Goodwill with VAT (KD)
+KUP,Goodwill exchange professional
+LAL,General direct debit
+LID,Discount for delivery difference (VT)
+LIS,"Discount for customer listing, ECO prem."
+ME1,Million Edition of 5 PROF
+MKD,Broadcast Meiskdi
+MMR,My Miele Rabatt (VT B2C)
+MON,Assembly acc. factory Account 4802 (VT)
+MOP,Summertime Mopstar PROF
+MS1,MSZ - Rep. Uneconomical
+MS2,MSZ - multiple repairs
+MS3,MSZ - technical solution
+MS4,MSZ - spare part
+MS5,MSZ - customer request
+MS6,MSZ - new defective
+MSZ,Warranty Extension
+NEU,New purchase remuneration (VT)
+ONL,"Property discount, retrospectively"
+PAC,Air purification technology PROF
+PAY,Small giant PRO placement campaign
+PCM,ProCare Med
+PEB,Performance Bonus PROF
+PEC,PerfectCare credit / debit
+PFD,Through commission (EX / VG)
+PO,Postage reimbursement (KD)
+PRI,Domestic commission account 4951 (VT)
+PRJ,Project business
+R01,Order cancellation
+R02,Goods not ordered
+R03,Double delivery
+R04,Obvious item damage
+R07,hidden item damage
+R08,goodwill
+R09,Picking error
+R10,Delivery date deviation
+R11,Other returns
+R12,Wrong ordered goods
+R13,Uncoordinated return
+R14,Loss of shipping company
+R15,Packaging damage
+R16,Returns ZEL
+R17,Loss WVZ
+R18,Wrong delivery date
+R19,Overstock
+R20,Warranty exchange - rep. Uneconomical
+R21,Warranty exchange - multiple repairs
+R22,Warranty exchange - technical solution
+R23,Warranty exchange - spare part
+R24,Guarantee exchange - customer request
+R25,Garantietausch - Neudefekt
+R29,Drive around
+R51,RET ET environmental bonus
+R52,RET ET spare parts guarantee
+R53,"RET ET liability for defects (incorrect,"
+R54,RET ET mix-up (e.g. customer & goods)
+R55,RET ET transport damage
+R56,RET ET goodwill request
+R57,RET ET standard (e.g. not required)
+R58,RET ET review
+R71,RET ET ANV notification
+R72,RET ET ANV recipient / company unknown
+R73,RET ET ANV acceptance refused
+R74,RET ET ANV No consent. Forward Addr.
+R77,RET ET ANV Other: .......
+RA1,Exhibition estate (VT)
+REA,General invoice
+REB,Own use (VT)
+REG,Return devices VG / EX according to GT
+REK,Complaint (VT / KD)
+REN,Return new part
+REP,Repair (KD)
+RET,Returns (KD)
+RG1,Return GT - Rep. Uneconomical
+RG2,Retoure GT - multiple repairs
+RG3,Retoure GT - technical solution
+RG4,Return GT - spare part
+RG5,Return GT - customer request
+RG6,Return GT - new defective
+RHK,Returns handling costs
+RNA,Subsequent discount (VT)
+RQM,Return QM
+RU1,Buyback - technical solution
+RU2,Buyback - customer request
+RU4,Buyback - TK
+RWI,Return B2C revocation
+SCH,Training fee (KD)
+SPV,Service partner contract - AMS only
+STE,Loyalty check cashing KDT replacement re
+SVE,Loss of shipment (KD)
+TEX,TEX
+TMW,TMW
+TRI,Triflex placement
+UM,Transfer (KD)
+VS1,Scrapping - Rep. Uneconomical
+VS2,Scrapping - multiple repairs
+VS3,Scrapping - technical solution
+VS4,Scrapping - spare part
+VS5,Scrapping - customer request
+VS6,Scrapping - new defective
+VSG,new article
+VZE,Booking according to agreement
+WB,Add Charge Account 8730/8731 (VT)
+WER,Advertising costs
+WG,Cancellation of previous direct debit
+WIN,"Costs for advertising fees, account 4606"
+XKM,Air purification technology PROF
+ZMB,Rebooking (VT / KD)
+ZP3,Delivery of defective goods
+ZP4,Delivery of wrong goods
+#,Not assigned

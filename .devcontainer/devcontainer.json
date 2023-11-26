@@ -1,0 +1,76 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/docker-existing-dockerfile
+{
+    "name": "dbt-MXA_DI",
+    // use image, instead of Dockerfile, so as to mount the workspace that have files in-sync
+    "build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": { 
+			// Update 'VARIANT' to pick a Python version: 3, 3.9, 3.8, 3.7, 3.6.
+			// Append -bullseye or -buster to pin to an OS version.
+			// Use -bullseye variants on local on arm64/Apple Silicon.
+			"VARIANT": "3.10-bullseye"
+		}
+	},
+    "runArgs": ["--env-file",".devcontainer/local.dbt.env"],
+    // Set *default* container specific settings.json values on container create.
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "python.linting.enabled": true,
+          "python.linting.pylintEnabled": true,
+          "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+          "sql.linter.run": "onSave",
+          "sql.linter.ignoreParsing": false,
+          "sql.linter.executablePath": "sqlfluff",
+          "files.associations": {
+              "*.sql": "jinja-sql",
+              "*.md": "jinja-md"
+            },
+            "editor.quickSuggestions": {
+              "strings": true
+            },
+            "python.linting.pycodestyleEnabled": true,
+            "python.formatting.blackArgs": [
+              "--line-length",
+              "100"
+            ],
+            "git.autofetch": true,
+            "git.path": "usr/bin/git",
+            "python.languageServer": "Pylance",
+            "github.copilot.enable": {
+              "*": true,
+              "yaml": true,
+              "plaintext": false,
+              "markdown": false
+            },
+            "terminal.integrated.rightClickBehavior": "copyPaste",
+            "workbench.iconTheme": "material-icon-theme",
+            "workbench.colorTheme": "Community Material Theme Darker",
+            "workbench.productIconTheme": "material-product-icons",
+            "editor.fontLigatures": true,
+            "editor.tokenColorCustomizations": {
+              "comments": "#76eec6"
+            }
+            
+      },
+      "extensions": [
+        "dorzey.vscode-sqlfluff",
+        "redhat.vscode-yaml",
+        "innoverio.vscode-dbt-power-user",
+        "bastienboutonnet.vscode-dbt"
+      ]
+      }
+    },
+    
+    // Add the IDs of extensions you want installed when the container is created.
+,
+    "forwardPorts": [
+        8080
+    ],
+    // install DBT dependencies after container is started && set git configs && set zsh environment variables to handle zscaler ca certificate for python
+    "postCreateCommand": "dbt clean && dbt deps --project-dir . && echo 'export CERT_PATH=$(python -m certifi)' >> ~/.zshenv && echo 'export SSL_CERT_FILE=$CERT_PATH' >> ~/.zshenv && echo 'export REQUESTS_CA_BUNDLE=$CERT_PATH' >> ~/.zshenv",
+    // configure git options to have it work from inside the git container (doesn't seem to work in postcreate)
+	"postStartCommand": "git config --global core.autocrlf true && git config --global --add safe.directory /workspaces/project_mxa && git config --global http.sslbackend openssl && git config --global credential.useHttpPath true"
+}

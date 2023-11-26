@@ -1,0 +1,21 @@
+﻿member_code,member_desc
+00,Assign internally
+01,Delivery date too la
+02,Poor Quality
+03,Too Expensive
+04,Competitor better
+05,Warranty
+06,Credit Check Negativ
+07,Processing Error (Mi
+08,Event cancelled
+09,Rejection by VL-Syst
+10,Unreasonable Request
+11,Cust.to Receive Repl
+20,Substituted Due to P
+30,Waits for Approval
+50,Transaction Is Being
+70,Technical Error in T
+90,not available
+91,Payment card invalid
+99,Leasing: Credit Memo
+#,Not assigned

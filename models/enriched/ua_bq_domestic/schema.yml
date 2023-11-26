@@ -1,0 +1,68 @@
+version: 2
+
+models:
+  - name: ua_bq_domestic_adwords_clickinfo
+    description: "This contains information about the Google Ads click info if there is any associated with this session. Analytics uses the last non-direct click model"
+    columns:
+      - name: visit_date
+        description: ""
+
+      - name: visit_id
+        description: ""
+
+      - name: full_visitor_id
+        description: ""
+
+      - name: adgroupid
+        description: "The Google ad-group ID."
+
+      - name: adnetworktype
+        description: "Network Type."
+
+      - name: campaignid
+        description: "The Google Ads campaign ID."
+
+      - name: creativeid
+        description: "The Google ad ID."
+
+      - name: criteriaid
+        description: "The ID for the targeting criterion."
+
+      - name: criteriaparameters
+        description: "Descriptive string for the targeting criterion."
+
+      - name: customerid
+        description: 	The Google Ads Customer ID."
+
+      - name: gclid
+        description: "The Google Click ID."
+
+      - name: isvideoad
+        description: "True if it is a Trueview video ad."
+
+      - name: page_number
+        description: "Page number in search results where the ad was shown."
+
+      - name: slot
+        description: "Position of the Ad"
+
+      - name: view_id
+        description: ""
+
+      - name: vg
+        description: ""
+
+      - name: click_info_key
+        description: ""
+
+      - name: traffic_source_key
+        description: ""
+
+      - name: session_key
+        description: ""
+
+      - name: meta_source
+        description: ""
+
+      - name: meta_insert_ts
+        description: ""

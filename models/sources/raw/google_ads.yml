@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: src_google_ads
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+    loaded_at_field: meta_insert_ts
+    schema: raw
+    tables:
+      - name: google_ads_keyword_view
+        description: Raw table with google ads keyword data

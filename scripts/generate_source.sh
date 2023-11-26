@@ -1,0 +1,2 @@
+dbt run-operation generate_source --args '{"schema_name": "raw", "table_names":["google_search_console"], "generate_columns":true, "include_descriptions":true}'
+dbt run-operation generate_source --args '{"schema_name": "raw", "table_names":["sap_bw_sales_transactions_vgd"], "generate_columns":true, "include_descriptions":true}'

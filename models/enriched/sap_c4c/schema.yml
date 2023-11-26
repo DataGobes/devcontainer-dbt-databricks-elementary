@@ -1,0 +1,158 @@
+version: 2
+
+models:
+  - name: sap_c4c_lead_overview
+    description: table with a single record for every lead
+    columns:
+      - name: lead_uid
+        description: PK, CDOC_UUID  
+      - name: lead_uid_text
+        description: TDOC_UUID
+      - name: lead_id
+        description: PK, CDOC_ID 
+      - name: lead
+        description: TDOC_ID
+      - name: lead_description
+        description: CLEAD_NAME
+      - name: campaign_id
+        description: CCAMPAIGN_ID
+      - name: campaign
+        description: TCAMPAIGN_ID
+      - name: campaign_uid
+        description: CCAMPAIGN_UUID
+      - name: campaign_uid_text
+        description: TCAMPAIGN_UUID
+      - name: distribution_channel_id
+        description: CDBA_DISTRCHN                       
+      - name: distribution_channel
+        description: TDBA_DISTRCHN
+      - name: division_id
+        description: CDBA_DIVISION 
+      - name: division 
+        description: TDBA_DIVISION 
+      - name: sales_organization 
+        description: CDBA_SALESORG 
+      - name: sales_organization_text 
+        description: TDBA_SALESORG  
+      - name: sales_organization_id 
+        description: CDBA_SALESORG_ID  
+      - name: sales_organization_id_text 
+        description: TDBA_SALESORG_ID  
+      - name: changed_dt 
+        description: converted from unix to timestamp
+      - name: created_dt
+        description: converted from unix to timestamp
+      - name: creation_by_id
+        description: CDOC_CREATIONBY  
+      - name: creation_by 
+        description: TDOC_CREATIONBY
+      - name: category_id 
+        description: CDOC_GROUP  
+      - name: category 
+        description: TDOC_GROUP
+      - name: source_id 
+        description: CDOC_ORIGINTYPE  
+      - name: source 
+        description: TDOC_ORIGINTYPE
+      - name: start_date 
+        description: converted from unix to timestamp 
+      - name: end_date  
+        description: converted from unix to timestamp
+      - name: priority_id
+        description: CDOC_PRIORITY      
+      - name: priority
+        description: TDOC_PRIORITY      
+      - name: calender_day
+        description: converted from unix to timestamp
+      - name: calender_year
+        description: CDOC_PROST_YR  
+      - name: calender_month_year 
+        description: CDOC_PROST_YR_M   
+      - name: calender_quarter_year 
+        description: CDOC_PROST_YR_Q  
+      - name: calender_week_year 
+        description: CDOC_PROST_YR_W   
+      - name: qualification_id
+        description: CDOC_QUALIFNLEVEL 
+      - name: qualification 
+        description: TDOC_QUALIFNLEVEL 
+      - name: approval_status_id
+        description: CDOC_S_APPROVAL
+      - name: approval_status 
+        description: TDOC_S_APPROVAL
+      - name: lifecycle_status_id 
+        description: CDOC_S_LIFECYCLE  
+      - name: lifecycle_status 
+        description: TDOC_S_LIFECYCLE 
+      - name: qualification_status_id 
+        description: CDOC_S_QUALIFN  
+      - name: qualification_status 
+        description: TDOC_S_QUALIFN   
+      - name: main_contact_id 
+        description: CDPC_MAINCONTPTY  
+      - name: main_contact 
+        description: TDPC_MAINCONTPTY  
+      - name: account_id
+        description: CDPY_PROSPECTPTY   
+      - name: account
+        description: TDPY_PROSPECTPTY
+      - name: industry_id 
+        description: CDPY_PRSPY_IND  
+      - name: industry 
+        description: TDPY_PRSPY_IND  
+      - name: industry_system_id 
+        description: CDPY_PRSPY_INDSYS 
+      - name: industry_system 
+        description: TDPY_PRSPY_INDSYS 
+      - name: score
+        description: CML_SCORE  
+      - name: territory_id
+        description: CSALES_TERRITORY_ID        
+      - name: territory
+        description: TSALES_TERRITORY_ID        
+      - name: lead_status_id
+        description: CUSER_STATUS_CODE  
+      - name: lead_status
+        description: TUSER_STATUS_CODE  
+      - name: lead_qualification_rate
+        description: KCLEAD_QUALIFICATION_RATE  
+      - name: lead_qualification_rate_formatted 
+        description: FCLEAD_QUALIFICATION_RATE  
+      - name: lead_qualification_rate_unit
+        description: UCLEAD_QUALIFICATION_RATE 
+      - name: lead_qualification_rate_currency
+        description: RCLEAD_QUALIFICATION_RATE 
+      - name: number_of_leads
+        description: KCNO_OF_LEADS      
+      - name: number_of_leads_formatted    
+        description: FCNO_OF_LEADS      
+      - name: cold  
+        description: KCNO_OF_COLD_LEADS 
+      - name: cold_formatted 
+        description: FCNO_OF_COLD_LEADS 
+      - name: warm
+        description: KCNO_OF_WARM_LEADS 
+      - name: warm_formatted
+        description: FCNO_OF_WARM_LEADS 
+      - name: hot
+        description: KCNO_OF_HOT_LEADS  
+      - name: hot_formatted
+        description: FCNO_OF_HOT_LEADS  
+      - name: light_leads
+        description: KCZF8B4765AECBF251A63E1D3  
+      - name: light_leads_formatted
+        description: FCZF8B4765AECBF251A63E1D3   
+      - name: light_leads_currency 
+        description: RCZF8B4765AECBF251A63E1D3  
+      - name: light_leads_unit
+        description: UCZF8B4765AECBF251A63E1D3  
+      - name: heavy_leads
+        description: KCZ253036B21CA89379E60E45  
+      - name: heavy_leads_formatted
+        description: FCZ253036B21CA89379E60E45  
+
+  - name: sap_c4c_report_lead_funnel
+    description: Table with the documents and values of leads and sales orders
+    columns:
+      - name: lead_id
+        description: PK, CDOC_ID

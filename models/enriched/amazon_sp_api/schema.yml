@@ -1,0 +1,286 @@
+version: 2
+
+models:
+  - name: enr_amazon_sales_report_sourcing
+    description: "The Amazon SP API Sales report in sourcing view"
+    columns:
+      - name: id
+        description: "Unique identifier for the row. Hash of vendor, day_date and asin."
+        tests:
+          - unique
+
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+        tests:
+          - not_null
+
+      - name: marketplace_id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report_type
+        description: "The type of Amazon SP API report"
+
+      - name: report_period
+        description: "The granularity of the report"
+
+      - name: selling_program
+        description: "The Amazon Retail Program (In the case of Miele is always 'Retail')"
+
+      - name: distributor_view
+        description: "The view of the report, can be 'Manufacturing' or 'Sourcing'"
+
+      - name: asin_code
+        description: "The ASIN code for the current row"
+        tests:
+          - not_null
+
+      - name: day_date
+        description: "The date for the current row"
+        tests:
+          - not_null
+
+      - name: customer_returns
+        description: "The number of customer returns for this ASIN on this date"
+
+      - name: report_local_currency
+        description: "The local currency in which this report is generated"
+
+      - name: shipped_cogs_amount_lc
+        description: "The COGS amount shipped in local currency"
+
+      - name: shipped_cogs_amount_eur
+        description: "The COGS amount shipped in euro"
+        tests:
+          - not_null
+
+      - name: shipped_revenue_amount_lc
+        description: "The revenue amount shipped in local currency"
+
+      - name: shipped_revenue_amount_eur
+        description: "The revenue amount shipped in euro"
+        tests:
+          - not_null
+
+      - name: shipped_units
+        description: "The number of shipped units"
+
+      - name: meta_insert_ts
+        description: "The insertion timestamp of the row"
+
+      - name: meta_load_ts
+        description: "The load into dataplatform timestamp of the row"
+
+      - name: meta_src
+        description: "The source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_src_modification_ts
+        description: "The modification timestamp of the source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_pipeline_run_id
+        description: "The runid of the ADF pipeline by which this row was created in the landing zone of the dataplatform"
+
+  - name: enr_amazon_sales_report_manufacturing
+    description: "The Amazon SP API Sales report in manufacturing view"
+    columns:
+      - name: id
+        description: "Unique identifier for the row. Hash of vendor, day_date and asin."
+        tests:
+          - unique
+
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+        tests:
+          - not_null
+
+      - name: marketplace_id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report_type
+        description: "The type of Amazon SP API report"
+
+      - name: report_period
+        description: "The granularity of the report"
+
+      - name: selling_program
+        description: "The Amazon Retail Program (In the case of Miele is always 'Retail')"
+
+      - name: distributor_view
+        description: "The view of the report, can be 'Manufacturing' or 'Sourcing'"
+
+      - name: asin_code
+        description: "The ASIN code for the current row"
+        tests:
+          - not_null
+
+      - name: day_date
+        description: "The date for the current row"
+        tests:
+          - not_null
+
+      - name: customer_returns
+        description: "The number of customer returns for this ASIN on this date"
+
+      - name: report_local_currency
+        description: "The local currency in which this report is generated"
+
+      - name: ordered_revenue_amount_lc
+        description: "The ordered revenue amount in local currency"
+
+      - name: ordered_revenue_amount_eur
+        description: "The ordered revenue amount in euro"
+        tests:
+          - not_null
+
+      - name: ordered_units
+        description: "The number of ordered units"
+
+      - name: shipped_cogs_amount_lc
+        description: "The COGS amount shipped in local currency"
+
+      - name: shipped_cogs_amount_eur
+        description: "The COGS amount shipped in euro"
+        tests:
+          - not_null
+
+      - name: shipped_revenue_amount_lc
+        description: "The revenue amount shipped in local currency"
+
+      - name: shipped_revenue_amount_eur
+        description: "The revenue amount shipped in euro"
+        tests:
+          - not_null
+
+      - name: shipped_units
+        description: "The number of shipped units"
+
+      - name: meta_insert_ts
+        description: "The insertion timestamp of the row"
+
+      - name: meta_load_ts
+        description: "The load into dataplatform timestamp of the row"
+
+      - name: meta_src
+        description: "The source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_src_modification_ts
+        description: "The modification timestamp of the source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_pipeline_run_id
+        description: "The runid of the ADF pipeline by which this row was created in the landing zone of the dataplatform"
+
+  - name: enr_amazon_traffic_report
+    description: "The Amazon SP API Traffic report"
+    columns:
+      - name: id
+        description: "Unique identifier for the row. Hash of vendor, day_date and asin."
+        tests:
+          - unique
+
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+        tests:
+          - not_null
+
+      - name: marketplace_id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report_type
+        description: "The type of Amazon SP API report"
+
+      - name: report_period
+        description: "The granularity of the report"
+
+      - name: asin_code
+        description: "The ASIN for the current row"
+        tests:
+          - not_null
+
+      - name: day_date
+        description: "The date for the current row"
+        tests:
+          - not_null
+
+      - name: glance_views
+        description: "The number of glance views"
+
+      - name: meta_insert_ts
+        description: "The insertion timestamp of the row"
+
+      - name: meta_load_ts
+        description: "The load into dataplatform timestamp of the row"
+
+      - name: meta_src
+        description: "The source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_src_modification_ts
+        description: "The modification timestamp of the source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_pipeline_run_id
+        description: "The runid of the ADF pipeline by which this row was created in the landing zone of the dataplatform"
+
+  - name: enr_amazon_net_pure_product_margin_report
+    description: ""
+    columns:
+      - name: id
+        description: "Unique identifier for the row. Hash of vendor, day_date and asin."
+        tests:
+          - unique
+
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+        tests:
+          - not_null
+      
+      - name: amazon_country
+        description: "The Amazon country of the record"
+        tests:
+          - not_null
+
+      - name: marketplace_id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report_type
+        description: "The type of Amazon SP API report"
+
+      - name: report_period
+        description: "The granularity of the report"
+
+      - name: asin_code
+        description: "The ASIN for the current row"
+        tests:
+          - not_null
+
+      - name: day_date
+        description: "The date for the current row"
+        tests:
+          - not_null
+
+      - name: net_pure_product_margin
+        description: "The net pure product margin percentage in decimal notation"
+
+      - name: meta_insert_ts
+        description: "The insertion timestamp of the row"
+
+      - name: meta_load_ts
+        description: "The load into dataplatform timestamp of the row"
+
+      - name: meta_src
+        description: "The source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_src_modification_ts
+        description: "The modification timestamp of the source file in the landing zone of the dataplatform for this row"
+
+      - name: meta_pipeline_run_id
+        description: "The runid of the ADF pipeline by which this row was created in the landing zone of the dataplatform"

@@ -1,0 +1,170 @@
+version: 2
+
+models:
+
+  - name: pbi_dwh_amazon_net_pure_product_margin_report
+    description: "Consumption view with Amazon SP API net pure product margin report data"
+    columns:
+      - name: id
+        description: "Unique identifier for the row. Hash of vendor, day_date and asin."
+
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+      
+      - name: amazon country
+        description: "The Amazon country code"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+
+      - name: marketplace id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report type
+        description: "The type of Amazon SP API report"
+
+      - name: report period
+        description: "The granularity of the report"
+
+      - name: selling program
+        description: "The Amazon Retail Program (In the case of Miele is always 'Retail')"
+
+      - name: asin code
+        description: "The ASIN code for the current row"
+
+      - name: date
+        description: "The date for the current row"
+
+      - name: net pure product margin
+        description: "The net pure product margin"
+
+  - name: pbi_dwh_amazon_sales_report
+    description: "Consumption view with Amazon SP API sales report data combining both 'Sourcing' and 'Manufacturing' views."
+    columns:
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+
+      - name: amazon country
+        description: "The Amazon country code"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+
+      - name: marketplace id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report type
+        description: "The type of Amazon SP API report"
+
+      - name: report period
+        description: "The granularity of the report"
+
+      - name: selling program
+        description: "The Amazon Retail Program (In the case of Miele is always 'Retail')"
+
+      - name: asin code
+        description: "The ASIN code for the current row"
+
+      - name: date
+        description: "The date for the current row"
+
+      - name: local currency
+        description: "The local currency for the current row"
+
+      - name: customer returns - sourcing
+        description: "The number of customer returns for this ASIN on this date in sourcing view"
+
+      - name: customer returns - manufacturing
+        description: "The number of customer returns for this ASIN on this date in manufacturing view"
+
+      - name: shipped cogs amount lc - sourcing
+        description: "The COGS amount shipped in local currency in sourcing view"
+
+      - name: shipped cogs amount lc - manufacturing
+        description: "The COGS amount shipped in local currency in manufacturing view"
+
+      - name: shipped cogs amount eur - sourcing
+        description: "The COGS amount shipped in euro in sourcing view"
+
+      - name: shipped cogs amount eur - manufacturing
+        description: "The COGS amount shipped in euro in manufacturing view"
+
+      - name: shipped revenue amount lc - sourcing
+        description: "The revenue amount shipped in local currency in sourcing view"
+
+      - name: shipped revenue amount lc - manufacturing
+        description: "The revenue amount shipped in local currency in manufacturing view"
+
+      - name: shipped revenue amount eur - sourcing
+        description: "The revenue amount shipped in euro in sourcing view"
+
+      - name: shipped revenue amount eur - manufacturing
+        description: "The revenue amount shipped in euro in manufacturing view"
+
+      - name: shipped units - sourcing
+        description: "The number of shipped units in sourcing view"
+
+      - name: shipped units - manufacturing
+        description: "The number of shipped units in manufacturing view"
+
+      - name: ordered revenue amount lc
+        description: "The ordered revenue amount in local currency"
+
+      - name: ordered revenue amount eur
+        description: "The ordered revenue amount in euro"
+
+      - name: ordered units
+        description: "The number of ordered units"
+
+  - name: pbi_dwh_amazon_traffic_report
+    description: "Consumption view with Amazon SP API traffic report data"
+    columns:
+      - name: id
+        description: "Unique identifier for the row. Hash of vendor, day_date and asin."
+
+      - name: vendor
+        description: "The Amazon SP API Vendor ID (Internal identifier matching country code followed by an counter in case of multiple vendors per country)"
+
+      - name: amazon country
+        description: "The Amazon country code"
+
+      - name: vg
+        description: "The Miele VG to which this vendor belongs"
+
+      - name: marketplace id
+        description: "The technical Amazon Marketplace ID which matches the marketplace for a country"
+
+      - name: report type
+        description: "The type of Amazon SP API report"
+
+      - name: report period
+        description: "The granularity of the report"
+
+      - name: selling program
+        description: "The Amazon Retail Program (In the case of Miele is always 'Retail')"
+
+      - name: asin code
+        description: "The ASIN code for the current row"
+
+      - name: date
+        description: "The date for the current row"
+
+      - name: glance views
+        description: "The number of glance views"
+
+  - name: pbi_dwh_dim_amazon_vendor
+    description: "Amazon vendor dimension"
+    columns:
+      - name: vendor
+        description: "The interal vendor id of the Amazon vendor. (Amazon country code + counter in case of multiple vendors in a country)"
+      - name: vg
+        description: "The VG to which the vendor belongs."
+      - name: amazon country
+        description: "The Amazon country of the vendor."
+      - name: vendor code
+        description: "The vendor id assigned by Amazon."
+      - name: vendor name
+        description: "The name of the vendor."
+      - name: calculate_in_sourcing
+        description: "Whether the vendor should be included in Sourcing view aggregates."
+

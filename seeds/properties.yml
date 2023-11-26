@@ -1,0 +1,131 @@
+version: 2
+
+seeds:
+  - name: n3_cust_grp3_miele_club
+    config:
+      column_types:
+        member_code: varchar(3)
+        member_desc: varchar(20)
+
+  - name: n3_dealer_agent
+    config:
+      column_types:
+        rep_unit_code: varchar(10)
+        rep_unit_desc: varchar(30)
+        dealer_agent_code: varchar(30)
+        dealer_agent_desc: varchar(100)
+
+  - name: n3_industry_miele
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: n3_reason_rejection
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: n3_value_type
+    config:
+      column_types:
+        member_code: varchar(3)
+        member_desc: varchar(20)
+
+  - name: vgd_3_31_sold_to_industry
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: vgd_3_53_cust_account_group
+    config:
+      column_types:
+        client_number: varchar(20)
+        language_key: varchar(20)
+        customer_account_group_code: varchar(20)
+        account_group_name: varchar(50)
+        flag_relevant: varchar(20)
+
+  - name: vgd_3_55_customer_group
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: vgd_4_06_sales_group
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: vgd_6_09_campaign
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: vgd_7_01_distribution_channel
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: vgd_7_05_reason_rejection
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(80)
+
+  - name: vgd_7_07_program_series
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+
+  - name: vgd_7_99_division
+    config:
+      column_types:
+        member_code: varchar(20)
+        member_desc: varchar(50)
+  
+  - name: sap_bw_controlling_product
+    config:
+      column_types:
+        full_ph							            : varchar(50)
+        ph1_product_type                : varchar(50)
+        ph2_product_area                : varchar(50)
+        ph3_article_group               : varchar(50)
+        ph4_product_profict_centre      : varchar(50)
+        ph5_article_sub_group           : varchar(50)
+        prod_hier_text_de               : varchar(500)
+        prod_hier_text_en               : varchar(500)
+        profit_centre                   : varchar(50)
+        reference_material_no           : varchar(50)
+        profit_centre_text_de           : varchar(500)
+        profit_centre_text_en           : varchar(500)
+        reference_prod_hierarchy        : varchar(50)
+        reporting_prod_category         : varchar(50)
+        reference_prod_hier_text_de     : varchar(500)
+        reference_prod_hier_text_en     : varchar(500)
+        reporting_prod_grp1             : varchar(50)
+        reporting_prod_grp1_text_de     : varchar(500)
+        reporting_prod_grp1_text_en     : varchar(500)
+        reporting_prod_grp2             : varchar(50)
+        reporting_prod_grp2_text_de     : varchar(500)
+        reporting_prod_grp2_text_en     : varchar(500)
+        reporting_prod_grp3             : varchar(50)
+        reporting_prod_grp3_text_de     : varchar(500)
+        reporting_prod_grp3_text_en     : varchar(500)
+        reporting_prod_grp4             : varchar(50)
+        reporting_prod_grp4_text_de     : varchar(500)
+        reporting_prod_grp4_text_en     : varchar(500)
+
+
+
+
+
+
+
+        

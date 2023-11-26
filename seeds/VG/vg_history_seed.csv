@@ -1,0 +1,66 @@
+﻿Country_name,VG,Region,Cluster,Top_6,Large_or_Small,Global_Focus_Markets,Platform,View_ID,VG_GA_name,Homepage_URL,from_dt,to_dt,is_active
+United Arab Emirates,AE,APAC,UAE+,No,L,Yes,intershop,80792051,UAE,https://www.miele.ae,2021-01-01,2050-12-31,Y
+Austria,AT,DACH,Austria+,No,L,Yes,hybris,237943496,AT,https://www.miele.at,2021-03-02,2050-12-31,Y
+Australia,AU,APAC,Australia+,Yes,L,Yes,intershop,68359854,AUS,https://www.miele.com.au,2021-01-01,2050-12-31,Y
+Belgium,BE,NWE,BeLux,No,L,Yes,legacy,78938354,BE,https://www.miele.be,2021-01-01,2022-05-17,N
+Belgium,BE,NWE,BeLux,No,L,Yes,hybris,266230247,BE,https://www.miele.be,2022-05-18,2050-12-31,Y
+Bulgaria,BG,SEE,EEC,No,S,No,local,128047471,BG,https://www.miele.bg,2021-01-01,2050-12-31,Y
+Brazil,BR,LATAM,Chile+,No,S,No,local,197382296,BZ,https://www.mielebrasil.com.br,2021-01-01,2050-12-31,Y
+Canada,CA,NAR,,No,L,Yes,local,102222417,CDN,https://www.miele.ca,2021-01-01,2050-12-31,Y
+Switzerland,CH,DACH,,Yes,L,Yes,legacy,78934695,CH,https://www.miele.ch,2021-01-01,2022-07-11,N
+Switzerland,CH,DACH,,Yes,L,Yes,hybris,269983198,CH,https://www.miele.ch,2022-07-12,2050-12-31,Y
+Chile,CL,LATAM,Chile+,No,L,Yes,local,80791859,CL,https://www.miele.cl,2021-01-01,2050-12-31,Y
+China,CN,APAC,,No,L,Yes,intershop,80788860,CN,https://www.miele.cn,2021-01-01,2050-12-31,Y
+Czech Republic,CZ,SEE,EEC,No,S,No,intershop,80813318,CZ,https://www.miele.cz,2021-01-01,2023-09-19,N
+Czech Republic,CZ,SEE,EEC,No,S,No,hybris,292536214,CZ,https://www.miele.cz,2023-09-20,2050-12-31,Y
+Germany,DE,DACH,,Yes,L,Yes,legacy,78934498,D,https://www.miele.de,2021-01-01,2023-01-23,N
+Germany,DE,DACH,,Yes,L,Yes,hybris,281005032,D,https://www.miele.de,2023-01-24,2050-12-31,Y
+Denmark,DK,NWE,Nordics,No,S,No,hybris,242715778,DK,https://www.miele.dk,2021-06-23,2050-12-31,Y
+Spain,ES,SEE,Iberia,No,L,Yes,legacy,78939442,ES,https://www.miele.es,2021-01-01,2022-11-06,N
+Spain,ES,SEE,Iberia,No,L,Yes,hybris,279034086,ES,https://www.miele.es,2022-11-07,2050-12-31,Y
+Finland,FI,NWE,Nordics,No,S,No,legacy,81850142,FIN,https://www.miele.fi,2021-01-01,2022-02-01,N
+Finland,FI,NWE,Nordics,No,S,No,hybris,258664140,FIN,https://www.miele.fi,2022-02-02,2050-12-31,Y
+France,FR,NWE,,No,L,Yes,hybris,252536143,FR,https://www.miele.fr,2021-01-01,2050-12-31,Y
+United Kingdom,GB,NWE,United Kingdom+,Yes,L,Yes,hybris,242802070,GB,https://www.miele.co.uk,2021-06-22,2050-12-31,Y
+Greece,GR,SEE,Greece+,No,L,Yes,legacy,78941828,GR,https://www.miele.gr,2021-01-01,2023-04-03,N
+Lithuania,LT,NWE,Baltics,No,S,No,intershop,83141249,LT,https://www.miele.lt,2021-01-01,2050-12-31,Y
+Estonia,EE,NWE,Baltics,No,S,No,intershop,80814013,EE,https://www.miele.ee,2021-01-01,2050-12-31,Y
+Hong Kong,HK,APAC,,No,L,Yes,intershop,80792753,HK,https://www.miele.hk,2021-01-01,2050-12-31,Y
+Croatia,HR,DACH,Austria+,No,S,No,intershop,102285925,HR,https://www.miele.hr,2021-01-01,2050-12-31,Y
+Hungary,HU,SEE,EEC,No,S,No,local,102220228,HU,https://www.miele.hu,2021-01-01,2023-05-30,N
+Hungary,HU,SEE,EEC,No,S,No,hybris,290188517,HU,https://www.miele.hu,2023-05-31,2050-12-31,Y
+Ireland,IE,NWE,United Kingdom+,No,S,No,legacy,78943011,IRL,https://www.miele.ie,2021-01-01,2022-12-05,N
+Ireland,IE,NWE,United Kingdom+,No,S,No,hybris,280673762,IRL,https://www.miele.ie,2022-12-06,2050-12-31,Y
+India,IN,APAC,UAE+,No,S,No,local,80788459,IND,https://www.miele.in,2021-01-01,2050-12-31,Y
+Italy,IT,SEE,,Yes,L,Yes,hybris,237963113,IT,https://www.miele.it,2021-03-02,2050-12-31,Y
+Japan,JP,APAC,,No,L,Yes,intershop,79743761,JP,https://www.miele.co.jp,2021-01-01,2050-12-31,Y
+South Korea,KR,APAC,,No,L,Yes,intershop,80787974,ROK,https://www.miele.co.kr,2021-01-01,2050-12-31,Y
+Kazakhstan,KZ,SEE,Russia+,No,S,No,local,80797196,KZ,https://www.miele.kz,2021-01-01,2050-12-31,Y
+Luxembourg,LU,NWE,BeLux,No,S,No,legacy,78939747,LUX,https://www.miele.lu,2021-01-01,2022-09-12,N
+Luxembourg,LU,NWE,BeLux,No,S,No,hybris,272345040,LUX,https://www.miele.lu,2022-09-13,2050-12-31,Y
+Latvia,LV,NWE,Baltics,No,S,No,intershop,80788870,LV,https://www.miele.lv,2021-01-01,2050-12-31,Y
+Mexico,MX,LATAM,Chile+,No,S,No,local,80785164,MEX,https://www.miele.com.mx,2021-01-01,2050-12-31,Y
+Malaysia,MY,APAC,Singapore+,No,S,No,intershop,80800263,MY,https://www.miele.my,2021-01-01,2050-12-31,Y
+Netherlands,NL,NWE,,Yes,L,Yes,hybris,245127360,NL,https://www.miele.nl,2021-07-19,2050-12-31,Y
+Norway,NO,NWE,Nordics,No,S,No,legacy,79745124,NO,https://www.miele.no,2021-01-01,2022-02-01,N
+Norway,NO,NWE,Nordics,No,S,No,hybris,258900422,NO,https://www.miele.no,2022-02-02,2050-12-31,Y
+New Zealand,NZ,APAC,Australia+,No,S,No,intershop,80785165,NZ,https://www.miele.co.nz,2021-01-01,2050-12-31,Y
+Poland,PL,SEE,EEC,No,S,No,legacy,102219171,PL,https://www.miele.pl,2021-01-01,2023-05-30,N
+Poland,PL,SEE,EEC,No,S,No,hybris,289912867,PL,https://www.miele.pl,2023-05-31,2050-12-31,Y
+Portugal,PT,SEE,Iberia,No,L,Yes,legacy,81757541,PT,https://www.miele.pt,2021-01-01,2022-11-21,N
+Portugal,PT,SEE,Iberia,No,L,Yes,hybris,278737962,PT,https://www.miele.pt,2022-11-22,2050-12-31,Y
+Romania,RO,SEE,EEC,No,S,No,local,102284240,RO,https://www.miele.ro,2021-01-01,2050-12-31,Y
+Serbia,RS,SEE,EEC,No,S,No,local,102220503,SRB,https://www.miele.rs,2021-01-01,2050-12-31,Y
+Russia,RU,SEE,Russia+,No,L,Yes,local,80806929,RU,https://www.miele.ru,2021-01-01,2050-12-31,Y
+Sweden,SE,NWE,Nordics,No,S,No,legacy,81561052,SE,https://www.miele.se,2021-01-01,2022-02-01,N
+Sweden,SE,NWE,Nordics,No,S,No,hybris,258986406,SE,https://www.miele.se,2022-02-02,2050-12-31,Y
+Singapore,SG,APAC,Singapore+,No,L,Yes,intershop,80789870,SGP,https://www.miele.sg,2021-01-01,2050-12-31,Y
+Slovakia,SK,SEE,EEC,No,S,No,intershop,80813309,SK,https://www.miele.sk,2021-01-01,2023-09-19,N
+Slovakia,SK,SEE,EEC,No,S,No,hybris,292536921,SK,https://www.miele.sk,2023-09-20,2050-12-31,Y
+Slovenia,SI,DACH,Austria+,No,S,No,local,102216196,SI,https://www.miele.si,2021-01-01,2050-12-31,Y
+Thailand,TH,APAC,Singapore+,No,S,No,local,185927455,TH,https://www.miele.co.th,2021-01-01,2050-12-31,Y
+Turkey,TR,SEE,,No,L,Yes,local,80815404,TR,https://www.miele.com.tr,2021-01-01,2050-12-31,Y
+Ukraine,UA,SEE,Russia+,No,S,No,local,80813231,UA,https://www.miele.ua,2021-01-01,2050-12-31,Y
+United States of America,US,NAR,,No,L,Yes,hybris,233255721,USA,https://www.mieleusa.com,2021-06-21,2050-12-31,Y
+South Africa,ZA,NWE,United Kingdom+,No,S,No,legacy,79745139,ZA,https://www.miele.co.za,2021-01-01,2050-12-31,Y
+Greece,GR,SEE,Greece+,No,L,Yes,hybris,284568943,GR,https://www.miele.gr,2023-04-04,2050-12-31,Y
