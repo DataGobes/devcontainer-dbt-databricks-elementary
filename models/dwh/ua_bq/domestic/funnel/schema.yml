@@ -1,6 +1,0 @@
-models:
-  - name: funnel_data_ua_bq
-    columns:
-      - name: session_key
-        tests:
-          - not_null

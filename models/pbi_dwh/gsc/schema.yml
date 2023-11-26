@@ -1,5 +1,0 @@
-version: 2
-
-models:
-  - name: pbi_dwh_google_search_console
-    description: "Consumption view with google search console data"

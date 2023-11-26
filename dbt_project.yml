@@ -34,39 +34,6 @@ models:
     # Config indicated by + and applies to all files under models/example/
     +on_schema_change: "fail"
     +incremental_strategy: "merge"
-    enriched:
-      +schema: enriched
-      +materialized: table
-      +format: delta
-      +persist_docs:
-        relation: true
-        columns: true
-    dwh:
-      +schema: dwh
-      +materialized: table
-      +format: delta
-      +persist_docs:
-        relation: true
-        columns: true
-    pbi_dwh:
-      +schema: pbi_dwh
-      +materialized: view
-      +persist_docs:
-        relation: true
-        columns: true
-    logging:
-      +schema: logging
-      +materialized: table
-    reference:
-      +schema: reference
-      +materialized: table
-      +location_root: /mnt/deltalake/reference/{{ env_var('DBT_USER_SCHEMA') }}
-  dbt_artifacts:
-    +schema: metadata
-    sources:
-      +schema: src_metadata
-    staging:
-      +schema: stg_metadata
   elementary:
     +schema: "elementary"
 
@@ -80,7 +47,6 @@ tests:
     
 
 on-run-end: 
-  - "{% if target.name == 'prod' %}{{ dbt_artifacts.upload_results(results) }}{% endif %}"
   - "{% if (flags.WHICH == 'run')
        and (target.name == 'prod') %} {{ delta_tbl_ops(results) }} {% endif %}"
 

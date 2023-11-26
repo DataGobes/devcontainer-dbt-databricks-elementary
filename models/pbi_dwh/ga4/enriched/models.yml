@@ -1,5 +1,0 @@
-models:
-  - name: rpt_enr_ga4_domestic_events
-    description: All events in non-processed format. Only for ad-hoc analysis!
-  - name: rpt_enr_ga4_domestic_event_parameters
-    description: All event parameters in non-processed format. Only for ad-hoc analysis! Links to rpt_enr_ga4_domestic_events through event_key
